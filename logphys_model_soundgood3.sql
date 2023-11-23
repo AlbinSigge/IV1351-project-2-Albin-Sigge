@@ -224,6 +224,7 @@ ALTER TABLE individual_lesson ADD CONSTRAINT FK_individual_lesson_0 FOREIGN KEY 
 ALTER TABLE individual_lesson ADD CONSTRAINT FK_individual_lesson_1 FOREIGN KEY (instrument) REFERENCES taught_instrument (instrument);
 
 
+-- Creating the trigger for limiting instrument rentals per student
 
 CREATE OR REPLACE FUNCTION check_active_rentals()
 RETURNS TRIGGER AS $$
@@ -250,6 +251,8 @@ BEFORE INSERT ON rental_service
 FOR EACH ROW
 EXECUTE FUNCTION check_active_rentals();
 
+
+-- Initial adding of skill levels and lesson types
 
 INSERT INTO valid_skill_level (skill_level) VALUES ('Beginner');
 INSERT INTO valid_skill_level (skill_level) VALUES ('Intermediate');
