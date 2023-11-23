@@ -26,12 +26,26 @@ insert into student (skill_level, person_id) values ('Advanced', 8);
 insert into student (skill_level, person_id) values ('Intermediate', 9);
 insert into student (skill_level, person_id) values ('Intermediate', 10);
 
-INSERT INTO contact_details(person_id, phone_number, email) VALUES (9, '987654321', 'hello@good.bye');
+INSERT INTO contact_details(person_id, phone_number, email) VALUES (1, '123456789', 'hello1@good.bye');
+INSERT INTO contact_details(person_id, phone_number, email) VALUES (2, '234567891', 'hello2@good.bye');
+INSERT INTO contact_details(person_id, phone_number, email) VALUES (3, '345678912', 'hello3@good.bye');
+INSERT INTO contact_details(person_id, phone_number, email) VALUES (4, '456789123', 'hello4@good.bye');
+INSERT INTO contact_details(person_id, phone_number, email) VALUES (5, '567891234', 'hello5@good.bye');
+INSERT INTO contact_details(person_id, phone_number, email) VALUES (6, '678912345', 'hello6@good.bye');
+INSERT INTO contact_details(person_id, phone_number, email) VALUES (7, '789123456', 'hello7@good.bye');
+INSERT INTO contact_details(person_id, phone_number, email) VALUES (8, '891234567', 'hello8@good.bye');
+INSERT INTO contact_details(person_id, phone_number, email) VALUES (9, '912345678', 'hello9@good.bye');
+INSERT INTO contact_details(person_id, phone_number, email) VALUES (10, '987654321', 'hello10@good.bye');
+INSERT INTO contact_details(person_id, phone_number, email) VALUES (11, '876543219', 'hello11@good.bye');
+INSERT INTO contact_details(person_id, phone_number, email) VALUES (12, '765432198', 'hello12@good.bye');
+INSERT INTO contact_details(person_id, phone_number, email) VALUES (13, '654321987', 'hello13@good.bye');
+INSERT INTO contact_details(person_id, phone_number, email) VALUES (14, '543219876', 'hello14@good.bye');
+INSERT INTO contact_details(person_id, phone_number, email) VALUES (15, '432198765', 'hello15@good.bye');
 
 INSERT INTO sibling(student_id, sibling_id) VALUES (1, 2);
 INSERT INTO sibling(student_id, sibling_id) VALUES (2, 1);
 
-INSERT INTO contact_person(student_id, contact_name, phone_number, email) VALUES (5, 'Martha Favill', '123456789', 'hi@good.bye');
+INSERT INTO contact_person(student_id, contact_name, phone_number, email) VALUES (5, 'Martha Favill', '000000000', 'hi@good.bye');
 
 
 insert into instructor (person_id) values (11);
